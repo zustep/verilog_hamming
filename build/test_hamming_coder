@@ -1,0 +1,79 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 9;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x565404112c00 .scope module, "test_hamming_coder" "test_hamming_coder" 2 4;
+ .timescale -9 -9;
+v0x565404129ee0_0 .var "a", 3 0;
+v0x565404129fa0_0 .net "b", 6 0, L_0x56540412acc0;  1 drivers
+S_0x565404112d90 .scope module, "hamming" "hamming_coder" 2 10, 3 1 0, S_0x565404112c00;
+ .timescale -9 -9;
+    .port_info 0 /INPUT 4 "in";
+    .port_info 1 /OUTPUT 7 "out";
+L_0x56540412a590 .functor XOR 1, L_0x56540412a3b0, L_0x56540412a480, C4<0>, C4<0>;
+L_0x56540412a6f0 .functor XOR 1, L_0x56540412a590, L_0x56540412a650, C4<0>, C4<0>;
+L_0x56540412a990 .functor XOR 1, L_0x56540412a800, L_0x56540412a8f0, C4<0>, C4<0>;
+L_0x56540412abd0 .functor XOR 1, L_0x56540412a990, L_0x56540412aad0, C4<0>, C4<0>;
+L_0x56540412b190 .functor XOR 1, L_0x56540412afe0, L_0x56540412b0f0, C4<0>, C4<0>;
+L_0x56540412b080 .functor XOR 1, L_0x56540412b190, L_0x56540412b2a0, C4<0>, C4<0>;
+v0x5654040fd5e0_0 .net *"_ivl_11", 0 0, L_0x56540412a1e0;  1 drivers
+v0x5654040fcf30_0 .net *"_ivl_15", 0 0, L_0x56540412a2b0;  1 drivers
+v0x565404128db0_0 .net *"_ivl_19", 0 0, L_0x56540412a3b0;  1 drivers
+v0x565404128e70_0 .net *"_ivl_21", 0 0, L_0x56540412a480;  1 drivers
+v0x565404128f50_0 .net *"_ivl_22", 0 0, L_0x56540412a590;  1 drivers
+v0x565404129080_0 .net *"_ivl_25", 0 0, L_0x56540412a650;  1 drivers
+v0x565404129160_0 .net *"_ivl_26", 0 0, L_0x56540412a6f0;  1 drivers
+v0x565404129240_0 .net *"_ivl_3", 0 0, L_0x56540412a070;  1 drivers
+v0x565404129320_0 .net *"_ivl_31", 0 0, L_0x56540412a800;  1 drivers
+v0x565404129400_0 .net *"_ivl_33", 0 0, L_0x56540412a8f0;  1 drivers
+v0x5654041294e0_0 .net *"_ivl_34", 0 0, L_0x56540412a990;  1 drivers
+v0x5654041295c0_0 .net *"_ivl_37", 0 0, L_0x56540412aad0;  1 drivers
+v0x5654041296a0_0 .net *"_ivl_38", 0 0, L_0x56540412abd0;  1 drivers
+v0x565404129780_0 .net *"_ivl_44", 0 0, L_0x56540412afe0;  1 drivers
+v0x565404129860_0 .net *"_ivl_46", 0 0, L_0x56540412b0f0;  1 drivers
+v0x565404129940_0 .net *"_ivl_47", 0 0, L_0x56540412b190;  1 drivers
+v0x565404129a20_0 .net *"_ivl_50", 0 0, L_0x56540412b2a0;  1 drivers
+v0x565404129b00_0 .net *"_ivl_51", 0 0, L_0x56540412b080;  1 drivers
+v0x565404129be0_0 .net *"_ivl_7", 0 0, L_0x56540412a140;  1 drivers
+v0x565404129cc0_0 .net "in", 3 0, v0x565404129ee0_0;  1 drivers
+v0x565404129da0_0 .net "out", 6 0, L_0x56540412acc0;  alias, 1 drivers
+L_0x56540412a070 .part v0x565404129ee0_0, 0, 1;
+L_0x56540412a140 .part v0x565404129ee0_0, 1, 1;
+L_0x56540412a1e0 .part v0x565404129ee0_0, 2, 1;
+L_0x56540412a2b0 .part v0x565404129ee0_0, 3, 1;
+L_0x56540412a3b0 .part v0x565404129ee0_0, 0, 1;
+L_0x56540412a480 .part v0x565404129ee0_0, 1, 1;
+L_0x56540412a650 .part v0x565404129ee0_0, 3, 1;
+L_0x56540412a800 .part v0x565404129ee0_0, 0, 1;
+L_0x56540412a8f0 .part v0x565404129ee0_0, 2, 1;
+L_0x56540412aad0 .part v0x565404129ee0_0, 3, 1;
+LS_0x56540412acc0_0_0 .concat8 [ 1 1 1 1], L_0x56540412a070, L_0x56540412a140, L_0x56540412a1e0, L_0x56540412a2b0;
+LS_0x56540412acc0_0_4 .concat8 [ 1 1 1 0], L_0x56540412a6f0, L_0x56540412abd0, L_0x56540412b080;
+L_0x56540412acc0 .concat8 [ 4 3 0 0], LS_0x56540412acc0_0_0, LS_0x56540412acc0_0_4;
+L_0x56540412afe0 .part v0x565404129ee0_0, 1, 1;
+L_0x56540412b0f0 .part v0x565404129ee0_0, 2, 1;
+L_0x56540412b2a0 .part v0x565404129ee0_0, 3, 1;
+    .scope S_0x565404112c00;
+T_0 ;
+    %vpi_call 2 14 "$dumpfile", "test_hamming_coder.vcd" {0 0 0};
+    %vpi_call 2 15 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x565404112c00 {0 0 0};
+    %pushi/vec4 10, 0, 4;
+    %store/vec4 v0x565404129ee0_0, 0, 4;
+    %delay 5, 0;
+    %pushi/vec4 11, 0, 4;
+    %store/vec4 v0x565404129ee0_0, 0, 4;
+    %delay 5, 0;
+    %vpi_call 2 22 "$display", "Finished!" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "../tests/test_hamming_coder.v";
+    "./../src/hamming_coder.v";

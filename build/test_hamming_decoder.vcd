@@ -1,0 +1,26 @@
+$date
+	Sun Feb 18 18:22:25 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module test_hamming_decoder $end
+$var wire 3 ! b [2:0] $end
+$var reg 7 " a [6:0] $end
+$scope module hamming $end
+$var wire 7 # in [6:0] $end
+$var wire 3 $ out [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 $
+b101010 #
+b101010 "
+b0 !
+$end
+#5
